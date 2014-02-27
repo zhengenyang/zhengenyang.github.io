@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://zhengenyang.github.io/sitemap.xml 
+Sitemap: http://leonotes.com/sitemap.xml 

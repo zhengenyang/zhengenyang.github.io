@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://zhengenyang.github.io/atom.xml" rel="self"/>
-  <link href="http://zhengenyang.github.io/"/>
-  <updated>2014-02-27T01:06:53+08:00</updated>
-  <id>http://zhengenyang.github.io/</id>
+  <title><![CDATA[寧靜▪致遠]]></title>
+  <link href="http://leonotes.com/atom.xml" rel="self"/>
+  <link href="http://leonotes.com/"/>
+  <updated>2014-02-28T01:19:20+08:00</updated>
+  <id>http://leonotes.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Leo]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
