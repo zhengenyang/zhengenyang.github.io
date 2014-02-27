@@ -1,21 +1,30 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
-$white: #FFFFFF;
-
 html {
-	background: $white;
+	background: $bg-color;
 }
 
 body {
 	font-family: $sans !important;
 	font-size: 1em;
+	line-height: 1.6em;
 
 	> header {
-		background: $white;
+		background: $bg-color;
 		text-align: center;
+		h1 {
+			color: $title-color; 
+		}
+		h2 {
+			font-size: 0.8em;
+		}
 	}
+
 	> nav {
+		background: $bg-color;
+		border-top: 1px solid #d1d1d1;
+		border-bottom: 1px solid #d1d1d1;
 		a {
 			font-family: $sans;
 			font-size: 0.9em;
@@ -29,16 +38,47 @@ body {
 				border-left: 0px;
 			}
 		}
+		form .search {
+			background-color: #d1d1d1;
+		}
 	}
 
 	> div {
-		background: $white;
+		background: $bg-color;
 		border-bottom: 0px;
 
 		> div {
-			background: $white;
+			background: $bg-color;
 			border-right-width: 0px;
 		}
+	}
+
+	table {
+		max-width: 100%;
+  		background-color: transparent;
+  		border-collapse: collapse;
+  		border-spacing: 0;
+		th, td {
+			padding: 8px;
+  			border: 1px solid #aaa;
+		}
+		th {
+			font-weight: bold;
+			background-color: #e0e0e0;
+		}
+		th[align="left"], td[align="left"] {
+                        text-align: left;
+                }
+		th[align="center"], td[align="center"] {
+                        text-align: center;
+                }
+		th[align="right"], td[align="right"] {
+			text-align: right;
+		}
+	}
+
+	> footer {
+		background: $bg-color;
 	}
 
 }
@@ -48,7 +88,7 @@ article {
 
 	.entry-content {
 		h3 {
-			font-style: italic
+			//font-style: italic
 		}
 	}
 
@@ -61,6 +101,13 @@ article {
 			font-family: $heading-font-family;
 			font-weight: 400;
 		}
+	}
+	blockquote {
+		font-size: 0.8em;
+		border-left: 4px solid $blockquote-border-color;
+		color: $blockquote-color;
+		padding-left: 1em;
+		margin-top: 1.5em;
 	}
 }
 
@@ -90,7 +137,7 @@ article {
 		h1 {
 			a {
 				font-family: $heading-font-family;
-				font-weight: 400;
+				font-weight: bold;
 			}
 
 			a:hover {
