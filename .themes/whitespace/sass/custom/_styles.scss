@@ -1,0 +1,161 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+html {
+	background: $bg-color;
+}
+
+body {
+	font-family: $sans !important;
+	font-size: 1em;
+	line-height: 1.6em;
+
+	> header {
+		background: $bg-color;
+		text-align: center;
+		h1 {
+			color: $title-color; 
+		}
+		h2 {
+			font-size: 0.8em;
+		}
+	}
+
+	> nav {
+		background: $bg-color;
+		border-top: 1px solid #d1d1d1;
+		border-bottom: 1px solid #d1d1d1;
+		a {
+			font-family: $sans;
+			font-size: 0.9em;
+			padding-top: 0.3em;
+			line-height: 1.5em;
+		}
+		li + li {
+			border-left: 0px;
+
+			a {
+				border-left: 0px;
+			}
+		}
+		form .search {
+			background-color: #d1d1d1;
+		}
+	}
+
+	> div {
+		background: $bg-color;
+		border-bottom: 0px;
+
+		> div {
+			background: $bg-color;
+			border-right-width: 0px;
+		}
+	}
+
+	table {
+		max-width: 100%;
+  		background-color: transparent;
+  		border-collapse: collapse;
+  		border-spacing: 0;
+		th, td {
+			padding: 8px;
+  			border: 1px solid #aaa;
+		}
+		th {
+			font-weight: bold;
+			background-color: #e0e0e0;
+		}
+		th[align="left"], td[align="left"] {
+                        text-align: left;
+                }
+		th[align="center"], td[align="center"] {
+                        text-align: center;
+                }
+		th[align="right"], td[align="right"] {
+			text-align: right;
+		}
+	}
+
+	> footer {
+		background: $bg-color;
+	}
+
+}
+
+article {
+	padding-top: 2em;
+
+	.entry-content {
+		h3 {
+			//font-style: italic
+		}
+	}
+
+	ul, ol {
+		margin-left: 2em;
+	}
+
+	header {
+		h1.entry-title {
+			font-family: $heading-font-family;
+			font-weight: 400;
+		}
+	}
+	blockquote {
+		font-size: 0.8em;
+		border-left: 4px solid $blockquote-border-color;
+		color: $blockquote-color;
+		padding-left: 1em;
+		margin-top: 1.5em;
+	}
+}
+
+#content {
+	div.pagination {
+		background: none repeat scroll 0 0 transparent;
+		margin: 0 10px;  
+		font-size: 0.95em;
+		padding-bottom: 1.5em;
+		margin-top: 4em;
+		position: relative;
+		text-align: center;		
+		border-top: dotted 1px #D1D1D1;
+		border-bottom: dotted 1px #D1D1D1;
+	}
+
+	.blog-index {
+		article {
+			padding-top: 4em;
+
+			header {
+				padding-left: 0;
+  				padding-right: 0;
+			}
+		}
+
+		h1 {
+			a {
+				font-family: $heading-font-family;
+				font-weight: bold;
+			}
+
+			a:hover {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.hentry {
+		h1.entry-title {
+			font-family: $heading-font-family;
+			font-weight: 400;
+			font-size: 2.2em;
+		}
+	}
+	
+}
+
+aside {
+	display: none;
+}
