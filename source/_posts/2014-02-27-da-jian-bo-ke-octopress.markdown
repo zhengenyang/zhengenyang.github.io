@@ -128,35 +128,3 @@ First Header | Second Header | Third Header
 Left         | Center        | Right
 Left         | Center        | Right
 {% endcodeblock %}
-  
-### 性能优化
-
-- 鉴于天朝网络的特殊性，Google的Web Font还是别用了
-
-{% codeblock lang:sh %}
-$ cd .themes/whitespace/source/_includes/custom
-$ vi head.html
-#把里面的内容全部注释掉
-{% endcodeblock %}
-
-- 从本地加载jquery.min.js
-
-{% codeblock lang:sh %}
-$ cd .themes/whitespace/source/_includes/
-$ vi head.html
-{% endcodeblock %}
-
-将  
-&lt;script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>  
-修改为  
-&lt;script src="{&#123; root_url }}/javascripts/libs/jquery.min.js"></script>
-
-- 获取jquery.min.map  
-由于1.9.1版本的jquery支持Source Map，在将jquery改为从本地加载后，需要将jquery.min.map也下载到本地
-
-{% codeblock lang:sh %}
-$ cd .themes/whitespace/source/javascripts/libs/
-$ wget http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.map
-{% endcodeblock %}
-
-> 关于Source Map的介绍，可以参看这篇文章：[Introduction to JavaScript Source Maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/)
