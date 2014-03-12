@@ -3,6 +3,6 @@
 <time datetime="{{ post.date | datetime | date_to_xmlschema }}" pubdate>{{ post.date | date: "<span class='month'>%m</span> 月"}}</time>
 {% if category != '0' %}
 <footer>
-  <span class="categories">posted in {{ post.categories | category_links }}</span>
+  <span class="categories">标签： {{ post.categories | category_links }}</span>
 </footer>
 {% endif %}

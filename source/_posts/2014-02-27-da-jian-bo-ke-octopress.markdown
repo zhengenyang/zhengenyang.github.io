@@ -4,12 +4,12 @@ layout: post
 title: "搭建博客-Octopress"
 date: 2014-02-27 12:21:45 +0800
 comments: true
-categories:
+categories: [personal, octopress]
 published: false
 
 ---
 
-{% img right /images/blog/octopress.jpg 300 170 Place Kitten #3 %}
+{% img right /images/blog/octopress.jpg 300 170 %}
 
 >使用Octopress搭建博客的文章已经多如牛毛，写这篇博客的主要目的是感受一下whitespace主题的样式，顺便根据个人喜好做些小的调整
 
@@ -33,6 +33,7 @@ $ git pull origin master
 > .com域名的a record生效时间一般在十几分钟到一个小时，.cn域名大概需要几个小时，各个域名服务商会有差异，需要耐心等待  
 > Github上CNAME的生效时间一般是十几分钟
 
+<!-- more -->
 ### 配置Octopress
 
 - Octopress并不需要过多配置，只需_config.yml里修改几个值就可以使用了，具体参见官方文档：[Configuring Octopress](http://octopress.org/docs/configuring/)
@@ -65,6 +66,7 @@ $ rake install['whitespace']
 	- _fonts.scss 字体定义，定义标题、正文、代码块等所用的字体
 	- _layout.scss 布局定义，页面宽度、padding、margin等
 	- _styles.scss 样式定义，这个文件会被最后加载，所有在此的定义都会覆盖其它文件里级联定义的值
+- 调整完后别忘了rake install['whitespace']
 	
 ### 一些网页样式的原则
 	
