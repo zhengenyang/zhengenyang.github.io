@@ -7,9 +7,11 @@ categories: [tech, java]
 published: false
 ---
 
-{% img right http://cdn1.crunchify.com/wp-content/uploads/2013/09/Crunchify-Java-Equals.jpg 300 170 %}
+{% img right /images/blog/equals.jpg 300 170 %}
 
 > 对于每个Java程序员来说，说起**equals**方法都是再熟悉不过了，大多数人觉得实现equals方法是小菜一碟，然而实际情况并非如此，在Java社区中，对于如何正确地实现equals方法有着相当多的争议，在实际应用中，不正确的equlas实现往往会产生诡异的、难以排查的问题
+>      
+> 配图取自：[nicodewet](http://nicodewet.com/)
 
 ### 什么是equals方法
 

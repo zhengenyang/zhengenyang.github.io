@@ -12,6 +12,8 @@ published: false
 {% img right /images/blog/octopress.jpg 300 170 %}
 
 >使用Octopress搭建博客的文章已经多如牛毛，写这篇博客的主要目的是感受一下whitespace主题的样式，顺便根据个人喜好做些小的调整
+>      
+> 配图取自：[octopress](http://octopress.org/)
 
 ### 安装Octopress
 
