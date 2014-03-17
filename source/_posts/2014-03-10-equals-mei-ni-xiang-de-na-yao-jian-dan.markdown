@@ -12,12 +12,13 @@ published: false
 > 对于每个Java程序员来说，说起**equals**方法都是再熟悉不过了，大多数人觉得实现equals方法是小菜一碟，然而实际情况并非如此，在Java社区中，对于如何正确地实现equals方法有着相当多的争议，在实际应用中，不正确的equlas实现往往会产生诡异的、难以排查的问题
 >      
 > 配图取自：[nicodewet](http://nicodewet.com/)
+> 原图地址：[点击查看](http://nicodewet.files.wordpress.com/2012/10/nicodewet-com_equals.jpg)
 
 ### 什么是equals方法
 
 为了文章的完整性， 先赘述一下什么是equals方法：通俗地讲，equals方法就是用来判断两个对象是否相等的，equals方法被定义在**Object**类中，因此，所有的类都具有默认的equals实现
 
-### 何时需要实现equals方法
+### 何时需要覆盖equals方法
 
 之前说到equals方法是用来比较两个对象是否相等的，因此，是否需要自己实现equals方法，取决于如何定义**相等**，以及超类（Super Class）的实现是否已经满足了子类对相等的定义  
 **Object**类中提供的默认equals实现是用双等号（==）来判断两个对象是否相等，这意味着默认的equals实现对**相等**的定义是：两个对象在内存中拥有相同的地址。毫无疑问，这是一个合理的默认实现：两个对象在内存中的地址相同说明是同一个对象
@@ -356,6 +357,6 @@ public boolean equals(Point2 point2) {
 ```
 
 ### 参考资料
-[1. ](id:1)[《Effective Java》by Josh Bloch](http://www.amazon.com/Effective-Java-Edition-Joshua-Bloch/dp/0321356683/ref=sr_1_1?ie=UTF8&qid=1394530865&sr=8-1&keywords=Effective+Java&tag=s601000020-20)  
+[1. ](id:1)[《Effective Java》by Josh Bloch](http://www.amazon.com/Effective-Java-Edition-Joshua-Bloch/dp/0321356683)  
 [2. ](id:2)[Secrets of equals() - Part 1](http://www.angelikalanger.com/Articles/JavaSolutions/SecretsOfEquals/Equals.html)  
 [3. ](id:3)[Secrets of equals() - Part 2](http://www.angelikalanger.com/Articles/JavaSolutions/SecretsOfEquals/Equals-2.html)
