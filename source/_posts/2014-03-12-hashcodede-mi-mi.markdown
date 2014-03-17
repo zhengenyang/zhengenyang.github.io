@@ -3,7 +3,7 @@ layout: post
 title: "hashCode的秘密"
 date: 2014-03-12 10:18:57 +0800
 comments: true
-categories: 
+categories: [tech, java]
 published: false
 ---
 
